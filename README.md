@@ -1,3 +1,3 @@
 # fgapi
 
-helper api for (filegilla) [https://filegilla.com]
+helper api for [filegilla](https://filegilla.com)
