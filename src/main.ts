@@ -5,7 +5,6 @@ import previewImageRouter from "./routes/previewImage.ts"
 import { logger } from "./middleware/logger.ts";
 
 const PORT = Number(Deno.env.get("PORT"));
-const HOST = Deno.env.get("HOST");
 const BASE_URL = Deno.env.get("BASE_URL");
 
 const app = new Application();
@@ -17,4 +16,4 @@ app.use(previewImageRouter.allowedMethods());
 
 
 console.log(`Server is running on ${BASE_URL}:${PORT}`);
-await app.listen({ hostname: HOST, port: PORT });
+await app.listen({ port: PORT });

@@ -1,0 +1,8 @@
+services:
+  app:
+    image: "non-for-now:1.0.0"
+    restart: "always"
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env

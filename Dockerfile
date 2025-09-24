@@ -9,7 +9,7 @@ EXPOSE ${PORT}
 COPY . .
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends ffmpeg imagemagick && \
+    apt-get install -y --no-install-recommends ffmpeg imagemagick ghostscript && \
     rm -rf /var/lib/apt/lists/*
 
-CMD ["deno", "run", "--allow-net", "--allow-run", "--allow-read", "--allow-write", "src/main.ts"]
+CMD ["deno", "task", "prod"]
