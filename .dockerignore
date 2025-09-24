@@ -1,0 +1,22 @@
+# Ignore the Deno cache and dependency files
+.deno
+.deno_dir
+
+# Ignore the output directory for compiled files
+out/
+
+# Ignore test files
+/test/
+
+# Ignore local environment files
+.env
+
+# Ignore Docker-related files
+Dockerfile
+.dockerignore
+
+# Ignore any log files
+*.log
+
+# Ignore node_modules if present
+node_modules/
