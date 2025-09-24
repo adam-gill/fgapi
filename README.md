@@ -27,7 +27,7 @@ The application needs some secret keys and settings to work. You'll store these 
 
 - Important: Replace the placeholder values (like your_db_password) with your actual settings.
 
-```bash
+```properties 
 # .env file template
 
 # Set the environment to 'development'
